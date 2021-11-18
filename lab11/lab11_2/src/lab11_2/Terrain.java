@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab11_2;
+
+/**
+ *
+ * @author USER
+ */
+public abstract class Terrain {
+    private String name; //กำหนดตัวแปล ชื่อ
+    
+    public Terrain(String name){
+        this.name = name; //กำหนด constructor
+    }
+    
+    public void setName(String name){
+        this.name =name; //เมธอดตั้งชื่อ
+    }
+    public String getName(){
+        return name; //เมธอดเรียกชื่อนั้น
+    }
+    abstract boolean canMove(Animal animal); 
+    
+}
